@@ -1,30 +1,28 @@
-package code_one;
+package code_two;
 
-
-
-class Test{
+class A{
 	
-	void math(int a,int b) {
-		a = a*2;
-		b = b/2;
-		
-		System.out.println("after call "+ a +" "+ b);
+	void work(int a){
+		 a*=5;
+		 
 		
 	}
 }
 
-public class callbyvalue {
-	
-	
-	
+
+public class callbyvalue{
 	
 	public static void main(String args[]) {
 		
-		Test ob = new Test();
-		int a = 15;
-		int b = 20;
-		System.out.println("before call "+ a + " "+ b);
-		ob.math(a,b);
+		A obj = new A();
+		
+		int x = 20;
+		System.out.println("Before passing the value is"+ x);
+		obj.work(x);
+		System.out.println("After passing the value is"+ x);
+		
+		
+		
 		
 	}
 
